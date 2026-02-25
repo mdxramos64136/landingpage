@@ -1,4 +1,5 @@
 import HeroSection from "./components/HeroSection";
+import Features from "./components/Features";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
         <HeroSection />
+        <Features />
       </div>
     </div>
   );
