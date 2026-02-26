@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Workflow from "./components/Workflow";
 import Pricing from "./components/Pricing";
 import Testemonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Workflow />
         <Pricing />
         <Testemonials />
+        <Footer />
       </div>
     </div>
   );
