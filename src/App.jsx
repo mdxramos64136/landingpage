@@ -3,6 +3,7 @@ import Features from "./components/Features";
 import Navbar from "./components/Navbar";
 import Workflow from "./components/Workflow";
 import Pricing from "./components/Pricing";
+import Testemonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Features />
         <Workflow />
         <Pricing />
+        <Testemonials />
       </div>
     </div>
   );
