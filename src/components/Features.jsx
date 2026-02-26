@@ -22,8 +22,8 @@ function Features() {
               <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-orange-700 justify-center items-center rounded-full">
                 {feature.icon}
               </div>
-              <div>
-                <h5 className="mt-1 mb-6 text-xl ">{feature.text}</h5>
+              <div className="min-w-0">
+                <h5 className="mt-1 mb-6 text-xl wrap-break">{feature.text}</h5>
                 <p className=" lg:text-md text-xl p-2 mb-20 text-neutral-500">
                   {feature.description}
                 </p>
