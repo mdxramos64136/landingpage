@@ -3,22 +3,24 @@ import { pricingOptions } from "../constants";
 
 function Pricing() {
   return (
-    <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
+    <section aria-labelledby="pricing-heading" className="mt-20">
+      <h2
+        id="pricing-heading"
+        className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
         Pricing
       </h2>
       <div className="flex flex-wrap">
         {pricingOptions.map((option, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
             <div className="p-10 border border-neutral-700 rounded-xl">
-              <p className="text-4xl mb-8">
+              <h3 className="text-4xl mb-8">
                 {option.title}
                 {option.title === "Pro" && (
                   <span className="bg-linear-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
                     (Most Popular)
                   </span>
                 )}
-              </p>
+              </h3>
               <p className="mb-8">
                 <span className="text-5xl mt-6 mr-2">{option.price}</span>
                 <span className="text-xl text-neutral-400 tracking-tight">
@@ -28,10 +30,10 @@ function Pricing() {
               <ul className="">
                 {option.features.map((feature, index) => (
                   <li key={index} className="flex flex-wrap mt-8 items-center">
-                    <span className="text-green-400">
+                    <span aria-hidden="true" className="text-green-400">
                       <CheckCircle2 />
                     </span>
-                    <span className="ml-2">{feature.split("")}</span>
+                    <span className="ml-2">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -44,7 +46,7 @@ function Pricing() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

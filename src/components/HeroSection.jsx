@@ -3,8 +3,12 @@ import video2 from "../assets/video2.mp4";
 
 function HeroSection() {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
-      <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+    <section
+      className="flex flex-col items-center mt-6 lg:mt-20"
+      aria-labelledby="hero-heading">
+      <h1
+        className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide"
+        id="hero-heading">
         VirtualR build tools
         <span className="bg-clip-text bg-linear-to-r from-orange-400 to-red-800 text-transparent">
           {" "}
@@ -17,17 +21,19 @@ function HeroSection() {
         into immersive reality!
       </p>
       <div className="flex justify-center my-10">
+        <button className="cursor-pointer bg-linear-to-r from-orange-400 to-red-800 rounded-md py-3 px-4 mx-3">
+          Start for free
+        </button>
         <a
           href="#"
-          className="bg-linear-to-r from-orange-400 to-red-800 rounded-md py-3 px-4 mx-3">
-          Start for free
-        </a>
-        <a href="#" className="rounded-md py-3 px-4 mx-3 border">
+          className=" rounded-md py-3 px-4 mx-3 border border-orange-300"
+          aria-label="Read VirtualR documentation">
           Documentation
         </a>
       </div>
       <div className="flex mt-10 justify-center">
         <video
+          aria-hidden="true"
           autoPlay
           loop
           muted
@@ -35,6 +41,7 @@ function HeroSection() {
           <source src={video1} type="video/mp4" />
         </video>
         <video
+          aria-hidden="true"
           autoPlay
           loop
           muted
@@ -42,7 +49,7 @@ function HeroSection() {
           <source src={video2} type="video/mp4" />
         </video>
       </div>
-    </div>
+    </section>
   );
 }
 

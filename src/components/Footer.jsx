@@ -5,9 +5,13 @@ function Footer() {
     <footer className="mt-20 border-t py-10 border-neutral-700 ">
       <div className="flex flex-col items-center gap-12 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-between">
         {/* Resources */}
-        <div className="w-full text-center sm:w-auto sm:text-left">
-          <h3 className="text-lg font-semibold mb-4 tracking-widest">
-            Resourses
+        <nav
+          aria-labelledby="footer-resources-heading"
+          className="w-full text-center sm:w-auto sm:text-left">
+          <h3
+            id="footer-resources-heading"
+            className="text-lg font-semibold mb-4 tracking-widest">
+            Resources
           </h3>
           <ul className="space-y-2">
             {resourcesLinks.map((resource, index) => (
@@ -20,11 +24,15 @@ function Footer() {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
         {/* Platform */}
-        <div className="w-full text-center sm:w-auto sm:text-left">
-          <h3 className="text-lg font-semibold mb-4 tracking-widest">
+        <nav
+          aria-labelledby="footer-platform-heading"
+          className="w-full text-center sm:w-auto sm:text-left">
+          <h3
+            id="footer-platform-heading"
+            className="text-lg font-semibold mb-4 tracking-widest">
             Platform
           </h3>
           <ul className="space-y-2">
@@ -38,11 +46,15 @@ function Footer() {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
         {/* Community */}
-        <div className="w-full text-center sm:w-auto sm:text-left">
-          <h3 className="text-lg font-semibold mb-4 tracking-widest">
+        <div
+          aria-labelledby="footer-community-heading"
+          className="w-full text-center sm:w-auto sm:text-left">
+          <h3
+            id="footer-community-heading"
+            className="text-lg font-semibold mb-4 tracking-widest">
             Community
           </h3>
           <ul className="space-y-2">
