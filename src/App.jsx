@@ -5,10 +5,11 @@ import Workflow from "./components/Workflow";
 import Pricing from "./components/Pricing";
 import Testemonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
         <HeroSection />
@@ -17,8 +18,9 @@ function App() {
         <Pricing />
         <Testemonials />
         <Footer />
+        <SpeedInsights />
       </div>
-    </div>
+    </>
   );
 }
 
